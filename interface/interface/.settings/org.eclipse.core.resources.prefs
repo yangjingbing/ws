@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/com/zf/webservice/HttpUtil.java=UTF-8
+encoding//src/com/zf/zigbee/RefreshStation/RefreshStation.java=UTF-8
+encoding//src/com/zf/zigbee/S_TaskReceive.java=UTF-8
+encoding//src/com/zf/zigbee/S_TaskSend.java=UTF-8
+encoding//src/com/zf/zigbee/S_zigbeeclient.java=UTF-8
+encoding//src/com/zf/zigbee/TaskReceive.java=UTF-8
+encoding//src/com/zf/zigbee/TaskSend.java=UTF-8
+encoding//src/com/zf/zigbee/zfMessageForSend.java=UTF-8
+encoding//src/com/zf/zigbee/zfServiceDistance.java=UTF-8
+encoding//src/com/zf/zigbee/zigbeeclient.java=UTF-8
+encoding/<project>=UTF-8

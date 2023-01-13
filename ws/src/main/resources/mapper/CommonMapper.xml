@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ws.mapper.CommonMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="RegionBaseResultMap" type="com.ws.entity.Region">
+        <id column="id" property="id"/>
+        <result column="number1" property="number"/>
+        <result column="dm" property="name"/>
+    </resultMap>
+    <resultMap id="WorkTypeBaseResultMap" type="com.ws.entity.WorkType">
+        <id column="id" property="id"/>
+        <result column="mc" property="name"/>
+    </resultMap>
+    <resultMap id="BatteryResultMap" type="com.ws.entity.Battery">
+        <id column="cardID" property="cardID"/>
+        <result column="V" property="V"/>
+    </resultMap>
+    <resultMap id="GZResultMap" type="com.ws.entity.Gz">
+        <id column="id" property="id"/>
+    </resultMap>
+    <resultMap id="InOrOutResultMap" type="com.ws.entity.InOrOutInfo">
+        <result column="ryName" property="ryName"/>
+        <result column="empName" property="empName"/>
+        <result column="cardsn" property="cardsn"/>
+        <result column="zwmc" property="zwmc"/>
+        <result column="qymc" property="qymc"/>
+        <result column="starttime" property="starttime"/>
+        <result column="outtime" property="outtime"/>
+    </resultMap>
+    <resultMap id="PersonPointResultMap" type="com.ws.entity.PersonPoint">
+        <id column="id" property="id"/>
+        <result column="card_sn" property="card"/>
+        <result column="mc" property="name"/>
+        <result column="xb" property="sex"/>
+        <result column="zwmc" property="position"/>
+        <result column="worktype" property="workType"/>
+        <result column="geo_x" property="x"/>
+        <result column="geo_y" property="y"/>
+        <result column="dt" property="time"/>
+        <result column="floor" property="floor"/>
+        <result column="nearly_station1" property="stationId"/>
+    </resultMap>
+    <resultMap id="PersonResultMap" type="com.ws.entity.PersonPointInfo">
+        <!--<id column="id" property="id"/>
+        <result column="card_sn" property="card_no"/>
+        <result column="mc" property="name"/>
+        <result column="xx" property="longitude"/>
+        <result column="yy" property="latitude"/>
+        <result column="dt" property="time_stamp"/>
+        <result column="floor" property="floor_no"/>
+        <result column="dw" property="company_code"/>-->
+        <!-- 新增内容 -->
+<!--        <result column="speed" property="speed"/>-->
+<!--        <result column="type" property="type"/>-->
+        <id column="id" property="id"/>
+        <result column="card_sn" property="card"/>
+        <result column="mc" property="name"/>
+        <result column="xb" property="sex"/>
+        <result column="zwmc" property="position"/>
+        <result column="worktype" property="workType"/>
+        <result column="geo_x" property="x"/>
+        <result column="geo_y" property="y"/>
+        <result column="dt" property="time"/>
+        <result column="layer_id" property="layer_id"/>
+        <result column="floor" property="floor"/>
+        <result column="nearly_station1" property="stationId"/>
+        <result column="dm" property="dm"/>
+        <result column="number1" property="number"/>
+    </resultMap>
+    <resultMap id="PersonsResultMap" type="com.ws.entity.PersonPoint">
+        <id column="id" property="id"/>
+        <result column="card_sn" property="card_no"/>
+        <result column="mc" property="name"/>
+        <result column="xx" property="longitude"/>
+        <result column="yy" property="latitude"/>
+        <result column="dt" property="time_stamp"/>
+        <result column="floor" property="floor_no"/>
+        <result column="dw" property="company_code"/>
+    </resultMap>
+    <resultMap id="PerResultMap" type="com.ws.entity.Person">
+        <id column="id" property="id"/>
+        <result column="card_sn" property="card"/>
+        <result column="mc" property="name"/>
+        <result column="xb" property="sex"/>
+        <result column="zwmc" property="position"/>
+        <result column="worktype" property="workType"/>
+        <result column="xx" property="x"/>
+        <result column="yy" property="y"/>
+        <result column="dt" property="time"/>
+        <result column="layer_id" property="layer_id"/>
+        <result column="floor" property="floor"/>
+        <result column="nearly_station1" property="stationId"/>
+        <result column="dm" property="dm"/>
+    </resultMap>
+    <resultMap id="PersonAlarmResultMap" type="com.ws.entity.PersonAlarm">
+    <id column="id" property="id"/>
+    <result column="mc" property="personName"/>
+    <result column="cardid" property="card"/>
+    <result column="dt" property="time"/>
+    <result column="messageType" property="alarmType"/>
+    <result column="number1" property="layerId"/>
+    <result column="dm" property="layerName"/>
+    <result column="geo_x" property="x"/>
+    <result column="geo_y" property="y"/>
+    <result column="layer_id" property="buildingId"/>
+    <result column="dm" property="buildingName"/>
+    <result column="cljg" property="cljg"/>
+</resultMap>
+
+    <resultMap id="AccessRecordResultMap" type="com.ws.entity.AccessRecord">
+        <id column="id" property="id"/>
+        <result column="inOutStatus" property="inOutStatus"/>
+        <result column="cardNo" property="cardNo"/>
+        <result column="fullName" property="fullName"/>
+        <result column="sex" property="sex"/>
+        <result column="workType" property="workType"/>
+        <result column="inTime" property="inTime"/>
+        <result column="ouTime" property="ouTime"/>
+    </resultMap>
+    <!-- 历史轨迹-->
+    <resultMap id="HisTraResultMap" type="com.ws.entity.HisTraInfo">
+        <id column="card_sn" property="cardid"/>
+        <result column="dt" property="time"/>
+        <result column="geo_x" property="x"/>
+        <result column="geo_y" property="y"/>
+        <result column="dm" property="layerName"/>
+    </resultMap>
+    <!-- 总人数 -->
+    <resultMap id="selPeoNum" type="com.ws.entity.PeoNum">
+        <result column="sum" property="num"/>
+    </resultMap>
+    <!--  各地区实时报警  -->
+    <resultMap id="OnLineAlarmResultMap" type="com.ws.entity.OnlineAlarm">
+        <id column="id" property="id"/>
+        <result column="mc" property="name"/>
+        <result column="cardID" property="cardId"/>
+        <result column="gz" property="workType"/>
+        <result column="DT" property="dtime"/>
+        <result column="messageType" property="alarmType"/>
+        <result column="qyId" property="areaId"/>
+        <result column="inside_qymcs" property="areaName"/>
+        <result column="layer_id" property="layerId"/>
+        <result column="sourceStationID" property="sourceStationId"/>
+    </resultMap>
+    <!--  实时实体定位  -->
+    <resultMap id="OnlinePeoPointResultMap" type="com.ws.entity.OnlinePeoPoint">
+        <id column="id" property="areaId"/>
+        <result column="dt" property="dataTime"/>
+        <result column="mc" property="empName"/>
+        <result column="gh" property="empNum"/>
+        <result column="gz" property="workType"/>
+        <result column="layer_id" property="layerId"/>
+        <result column="card_sn" property="ryCardId"/>
+        <result column="geo_x" property="x"/>
+        <result column="geo_y" property="y"/>
+        <result column="nearly_station1" property="stationId"/>
+    </resultMap>
+    <!--  实体信息  -->
+    <resultMap id="PersonInfoResultMap" type="com.ws.entity.PersonInfo">
+        <id column="id" property="pId"/>
+        <result column="sn" property="cardId"/>
+        <result column="mc" property="bmName"/>
+        <result column="gz" property="workType"/>
+        <result column="xb" property="sex"/>
+        <result column="bmid" property="depId"/>
+        <result column="zp" property="photo"/>
+        <result column="ryname" property="ryName"/>
+        <result column="YHID" property="userId"/>
+    </resultMap>
+    <!--  设备定位信息  -->
+    <resultMap id="ApointLocInfoResultMap" type="com.ws.entity.ApointLocInfo">
+        <id column="card_sn" property="id"></id>
+        <result column="mc" property="ryName"></result>
+        <result column="dt" property="time"></result>
+        <result column="xx" property="lng"></result>
+        <result column="yy" property="lat"></result>
+        <result column="layer_id" property="layer"></result>
+        <result column="bjlx" property="status"></result>
+    </resultMap>
+    <!--  车辆速度计算  -->
+    <resultMap id="carSpeedResultMap" type="com.ws.entity.CarInfo">
+        <id column="id" property="id"/>
+        <result column="geo_x" property="x"/>
+        <result column="dt" property="time"/>
+    </resultMap>
+    <!-- 人员卡基本信息 -->
+    <resultMap id="selRykInfoResultMap" type="com.ws.entity.RyCardInfo">
+        <id column="id" property="id"></id>
+        <result column="sn" property="cardId"/>
+        <result column="ryid" property="ryId"/>
+        <result column="zt" property="status"/>
+        <result column="lrsj" property="inputTime"/>
+        <result column="lrr" property="inputPerson"/>
+    </resultMap>
+    <!-- 人员信息及经纬度位置信息 -->
+    <resultMap id="selLocJAndWResultMap" type="com.ws.entity.locJAndW">
+        <id column="id" property="id"/>
+        <result column="sn" property="macNo"/>
+        <result column="dt" property="time"/>
+        <result column="xx" property="lng"/>
+        <result column="yy" property="lat"/>
+        <result column="mc" property="name"/>
+        <result column="layer_id" property="Mapcode"/>
+    </resultMap>
+    <!--  获取所有人员信息  -->
+    <resultMap id="getAllResultMap" type="com.ws.entity.People">
+        <!--<id column="id" property="id"/>
+        <result column="sn" property="macNo"/>
+        <result column="mc" property="name"/>
+        <result column="xb" property="sex"/>
+        <result column="bmid" property="deptId"/>
+        <result column="gh" property="JobNo"/>
+        <result column="deptName" property="deptName"/>-->
+        <id column="id" property="id"/>
+        <result column="sn" property="macNo"/>
+        <result column="mc" property="name"/>
+        <result column="xb" property="sex"/>
+        <result column="bmid" property="deptId"/>
+        <result column="gh" property="JobNo"/>
+        <result column="deptName" property="deptName"/>
+        <result column="zwmc" property="zwmc"/>
+        <result column="gz" property="gz"/>
+        <result column="dw" property="dw"/>
+        <!--<result column="uuid" property="id"/>
+        <result column="zwid" property="post_id"/>
+        <result column="mc" property="post_name"/>
+        <result column="bmid" property="depart_id"/>
+        <result column="bmmc" property="depart_name"/>
+        <result column="rymc" property="name"/>
+        <result column="xb" property="sex"/>
+        <result column="sn" property="card_no"/>
+        <result column="gz" property="employee_type"/>
+        <result column="dw" property="company_code"/>-->
+    </resultMap>
+    <!--  获取所有人员信息  -->
+    <resultMap id="getAllResultMap1" type="com.ws.entity.People">
+        <id column="id" property="id"/>
+        <result column="sn" property="macNo"/>
+        <result column="mc" property="name"/>
+        <result column="xb" property="sex"/>
+        <result column="bmid" property="deptId"/>
+        <result column="gh" property="JobNo"/>
+        <result column="deptName" property="deptName"/>
+    </resultMap>
+    <!--  抬杠车辆信息  -->
+    <resultMap id="selCarInfoResultMap" type="com.ws.entity.CarInfo">
+        <result column="carnum" property="carnum"/>
+        <result column="cardid" property="cardid"/>
+        <result column="description" property="description"/>
+        <result column="dt" property="dt"/>
+    </resultMap>
+    <!-- 各地区实时在线人数 -->
+    <resultMap id="OnLinePersonResultMap" type="com.ws.entity.OnLinePerson">
+        <id column="id" property="id"></id>
+        <result column="dm" property="name"/>
+        <result column="sum" property="sum"/>
+    </resultMap>
+    <!--  不抬杠车辆信息  -->
+    <resultMap id="selCarInfo2ResultMap" type="com.ws.entity.CarInfo">
+        <result column="carnum" property="carnum"/>
+        <result column="cardid" property="cardid"/>
+        <result column="description" property="description"/>
+        <result column="dt" property="dt"/>
+    </resultMap>
+    <resultMap id="DevicesResultMap" type="com.ws.entity.DevicesInfo">
+        <id column="id" property="id"/>
+        <result column="layer_id" property="workshopid"/>
+    </resultMap>
+    <resultMap id="DevicesByIdResultMap" type="com.ws.entity.Point">
+        <result column="xx" property="lng"/>
+        <result column="yy" property="lat"/>
+    </resultMap>
+    <resultMap id="PositionsResultMap" type="com.ws.entity.Position">
+        <result column="card_sn" property="cid"/>
+        <result column="dt" property="dt"/>
+    </resultMap>
+<resultMap id="HisTrajectoryResultMap" type="com.ws.entity.Trajectroy">
+    <result column="card_sn" property="cid"/>
+    <result column="dt" property="t"/>
+</resultMap>
+    <resultMap id="BarrierResultMap" type="com.ws.entity.Barriers">
+        <id column="id" property="barrierid"/>
+        <result column="mc" property="barriernm"/>
+        <result column="layer_id" property="workshopid"/>
+    </resultMap>
+    <resultMap id="Point1Result" type="com.ws.entity.Point1">
+        <result column="x11" property="lng1"/>
+        <result column="y11" property="lat1"/>
+        <result column="x22" property="lng2"/>
+        <result column="y22" property="lat2"/>
+        <result column="x33" property="lng3"/>
+        <result column="y33" property="lat3"/>
+        <result column="x44" property="lng4"/>
+        <result column="y44" property="lat4"/>
+    </resultMap>
+    <resultMap id="WarningResultMap" type="com.ws.entity.Warnings">
+        <result column="mc" property="name"/>
+        <result column="cardsn" property="cid"/>
+        <result column="bjlx" property="warningType"/>
+        <result column="dt" property="warningtime"/>
+        <result column="layer_id" property="workshopid"/>
+        <result column="worknum" property="worknum"/>
+        <result column="qyid" property="barrierid"/>
+    </resultMap>
+    <resultMap id="StationIdResultMap" type="com.ws.entity.stationid">
+        <result column="station_id" property="station_id"/>
+        <result column="layer_id" property="layer_id"/>
+    </resultMap>
+    <!--  电子围栏报警查询  -->
+    <resultMap id="selFenceAlarmInfoResultMap" type="com.ws.entity.Fence">
+<!--        <id column="id" property="id"/>-->
+       <!-- <result column="uuid" property="id"/>
+        <result column="dt" property="time"/>
+        <result column="cardid" property="card_no"/>
+        <result column="mc" property="name"/>
+        <result column="messageType" property="type"/>
+        <result column="dw" property="company_code"/>
+        <result column="layer_name" property="area_name"/>
+        <result column="cljg" property="handle_remark"/>
+        <result column="geo_x" property="longitude"/>
+        <result column="geo_y" property="latitude"/>
+        <result column="clsj" property="handle_time"/>-->
+        <id column="id" property="id"/>
+        <result column="dt" property="dt"/>
+        <result column="cardsn" property="cardsn"/>
+        <result column="mc" property="ryName"/>
+        <result column="bjlx" property="bjlx"/>
+        <result column="layer_id" property="layerid"/>
+        <result column="layer_name" property="layerName"/>
+    </resultMap>
+
+    <resultMap id="StationPosResultMap" type="com.ws.entity.JZ_JBXX">
+        <result column="station_id" property="stationId"/>
+        <result column="geo_x" property="lng"/>
+        <result column="geo_y" property="lat"/>
+    </resultMap>
+
+<!--    <resultMap id="PointResultMap" type="com.ws.entity.Position">-->
+<!--        <result column="geo_x" property="lng"/>-->
+<!--        <result column="geo_y" property="lat"/>-->
+<!--    </resultMap>-->
+    <!-- 通用查询结果列 -->
+    <sql id="Region_Base_Column_List">
+        id, number1, dm
+    </sql>
+    <sql id="WorkType_Base_Column_List">
+        id, mc
+    </sql>
+    <resultMap id="GateWayMap" type="com.ws.entity.GateJzxx">
+        <id column="id" property="id"/>
+        <result column="mc" property="mc"/>
+        <result column="type" property="type"/>
+        <result column="station_id" property="station_id"/>
+        <result column="layer_id" property="layer_id"/>
+        <result column="geo_x" property="geo_x"/>
+        <result column="geo_y" property="geo_y"/>
+        <result column="geo_z" property="geo_z"/>
+        <result column="ip" property="ip"/>
+    </resultMap>
+    <resultMap id="PerAndCardMap" type="com.ws.entity.PerAndCard">
+        <id column="id" property="id"/>
+        <result column="cardId" property="cardId"/>
+        <result column="ryName" property="ryName"/>
+        <result column="bmName" property="bmName"/>
+        <result column="gzName" property="gzName"/>
+    </resultMap>
+    <!-- 查询所有工种信息 -->
+    <select id="selectWorkType" resultMap="WorkTypeBaseResultMap">
+        SELECT
+        <include refid="WorkType_Base_Column_List"/>
+        FROM t_dm_gz
+    </select>
+    <!--各地区实时在线人数-->
+    <select id="selOnLinePerson" resultMap="OnLinePersonResultMap">
+        SELECT b.id ,c.dm,COUNT(people) AS  sum FROM
+            ( SELECT  DISTINCT s.card_sn AS people , s.layer_id AS id   FROM
+                (SELECT MAX(id) AS id FROM `t_his` WHERE dt>=DATE_ADD(NOW(),INTERVAL  -20.0 SECOND)   GROUP BY `card_sn`) t
+                        LEFT JOIN `t_his` AS s ON t.id=s.id)  b
+                LEFT JOIN t_dm_layer c ON   b.id=c.id GROUP BY b.id
+    </select>
+    <!-- 查询指定工种人数 -->
+    <select id="selectPeopleNumberByWorkType" resultType="java.lang.Integer">
+        SELECT
+          COUNT( DISTINCT aa.card_sn )
+        FROM(SELECT a.card_sn,a.dt,g.id FROM t_his a
+          LEFT JOIN t_ryk_jbxx c ON a.card_sn = c.sn
+		  LEFT JOIN t_ry_jbxx d ON c.ryid = d.id
+		  LEFT JOIN t_dm_gz g ON d.gz = g.id ) aa
+        WHERE aa.dt >= DATE_ADD( NOW( ), INTERVAL - 20 SECOND )
+	    AND aa.id = #{id}
+    </select>
+   <!--  查询所有工种类型 -->
+   <!-- <select id="selectAllGz" resultMap="GZResultMap">
+        select id from t_dm_gz
+    </select>
+    &lt;!&ndash; 查询各工种人数 &ndash;&gt;
+    <select id="selectPeopleNumberByGz" resultType="java.lang.Integer">
+        SELECT COUNT(distinct a.card_sn) FROM t_his_backup a
+        LEFT JOIN t_ryk_jbxx b ON a.`card_sn` = b.`sn`
+        LEFT JOIN t_ry_jbxx c ON b.`ryid` = a.`id`
+        WHERE c.`gz` = {id} and a.dt >= DATE_ADD( NOW( ), INTERVAL - 20 SECOND )
+    </select>-->
+    <!-- 查询指定工种人员坐标 -->
+   <!-- <select id="selectPersonPointByGz" resultMap="PersonPointResultMap">
+        SELECT
+            MAX(a.id) AS id,
+            a.card_sn,
+            c.mc,
+            c.`xb`,
+            c.`zwmc`,
+            d.`MC` AS worktype,
+            a.xx,
+            a.yy,
+            MAX(a.dt) AS dt,
+            a.nearly_station1
+        FROM
+            (SELECT
+                 *
+             FROM
+                 t_his_backup
+             ORDER BY dt DESC  ) a
+                LEFT JOIN t_ryk_jbxx b
+                          ON a.card_sn = b.sn
+                LEFT JOIN t_ry_jbxx c
+                          ON c.id = b.ryid
+                LEFT JOIN t_dm_gz d
+                          ON d.`id` = c.`gz`
+        WHERE c.`gz` = {id}
+        and  a.dt >= DATE_ADD(NOW(),INTERVAL -20 SECOND)
+        GROUP BY a.card_sn
+    </select>-->
+
+    <!-- 查询所有区域信息 -->
+    <select id="selectRegion" resultMap="RegionBaseResultMap">
+        SELECT
+        <include refid="Region_Base_Column_List"/>
+        FROM t_dm_layer WHERE number1 &lt;&gt; '' AND number1 IS NOT NULL
+    </select>
+
+    <!-- 查询指定区域人数 -->
+    <select id="selectPeopleNumberByRegion" resultType="java.lang.Integer">
+        SELECT
+        COUNT(DISTINCT card_sn)
+        FROM t_his
+        WHERE layer_id = #{id}
+    </select>
+
+    <!--查询指定区域人员坐标-->
+    <select id="selectPersonPointByRegion" resultMap="PersonPointResultMap">
+        SELECT
+            MAX(a.id) as id,
+            a.card_sn,
+            c.mc,
+            c.`xb`,
+            c.`zwmc`,
+            d.`MC` as worktype,
+            a.geo_x,
+            a.geo_y,
+            MAX(a.dt) as dt,
+            a.nearly_station1
+        FROM
+            (SELECT
+                 *
+             FROM
+                 t_his
+             ORDER BY dt DESC) a
+                LEFT JOIN t_ryk_jbxx b
+                          ON a.card_sn = b.sn
+                LEFT JOIN t_ry_jbxx c
+                          ON c.id = b.ryid
+                LEFT JOIN t_dm_gz d
+                          ON d.`id` = c.`gz`
+                LEFT JOIN t_dm_layer e
+                          on a.layer_id = e.id
+        WHERE a.layer_id = #{id}
+          and  a.dt >= DATE_ADD(NOW(),INTERVAL -20 SECOND)
+        GROUP BY a.card_sn
+    </select>
+
+    <select id="selectPersonPointByOtherRegion" resultMap="PersonPointResultMap">
+        SELECT
+            MAX(a.id) as id,
+            a.card_sn,
+            c.mc,
+            c.`xb`,
+            c.`zwmc`,
+            d.`MC` as worktype,
+            a.geo_x,
+            a.geo_y,
+            MAX(a.dt) as dt,
+            a.nearly_station1
+        FROM
+            (SELECT
+                 *
+             FROM
+                 t_his
+             ORDER BY dt DESC) a
+                LEFT JOIN t_ryk_jbxx b
+                          ON a.card_sn = b.sn
+                LEFT JOIN t_ry_jbxx c
+                          ON c.id = b.ryid
+                LEFT JOIN t_dm_gz d
+                          ON d.`id` = c.`gz`
+                LEFT JOIN t_dm_layer e
+                          on a.layer_id = e.id
+        WHERE a.layer_id = #{id}
+          and  a.dt >= DATE_ADD(NOW(),INTERVAL -20 SECOND)
+        GROUP BY a.card_sn
+
+    </select>
+
+    <!--航天恒嘉需要进行修改
+    -->
+    <select id="selectPersonAlarm" resultMap="PersonAlarmResultMap">
+        SELECT a.id,c.mc,a.cardid,a.dt,a.messageType,d.number1,d.`dm`,a.geo_x,a.geo_y,a.cljg
+        FROM t_alarm a
+        LEFT JOIN t_ryk_jbxx b ON a.cardid = b.sn
+        LEFT JOIN t_ry_jbxx c ON c.id = b.ryid
+        LEFT JOIN t_dm_layer d ON d.`id` = a.`layer_id`
+        LEFT JOIN t_his e ON a.dt = e.dt
+    -- WHERE a.`status` = 0
+#         and (a.geo_x or a.geo_y) is not null
+#         AND a.dt >= DATE_ADD(NOW(),INTERVAL -30 SECOND)
+        group by a.cardid
+    </select>
+    <select id="selectAccessRecord" resultMap="AccessRecordResultMap">
+        SELECT
+            a.id,
+            a.STATUS inOutStatus,
+            b.sn cardNo,
+            c.mc fullName,
+            c.xb sex,
+            d.mc workType,
+            a.starttime inTime,
+            a.outstarttime ouTime
+        FROM
+            t_kq_jbxx a
+            LEFT JOIN t_ryk_jbxx b ON b.sn = a.cardsn
+            LEFT JOIN t_ry_jbxx c ON c.id = b.ryid
+            LEFT JOIN t_dm_gz d ON d.id = c.gz
+        ORDER BY
+            a.`starttime` DESC
+    </select>
+    <select id="pushPositionData" resultType="com.ws.entity.PushData">
+        SELECT
+            a.id id,
+            a.geo_x x,
+            a.geo_y y,
+            b.geo_z z,
+            a.card_sn card
+        FROM
+            t_his a
+            LEFT JOIN t_dm_layer b ON a.layer_id = b.id
+        WHERE
+            a.dt BETWEEN #{startTime} AND #{endTime}
+    </select>
+    <!--历史轨迹查询-->
+    <select id="selHisTra" resultMap="HisTraResultMap">
+        SELECT
+            a.card_sn,a.dt,a.geo_x,a.geo_y,b.dm
+        FROM
+            t_his_backup a
+            LEFT JOIN
+            t_dm_layer b
+        ON
+            a.layer_id  = b.id
+
+        where
+            a.card_sn = #{cardId} and a.dt BETWEEN #{startTime} AND #{endTime}
+        group by a.dt
+    </select>
+
+    <!-- 总人数 -->
+    <select id="selPeoNum" resultType="java.lang.Integer">
+    <!--<select id="selPeoNum" resultMap="java.lang.Integer">-->
+        SELECT
+            COUNT(kq.id) AS sum
+        FROM
+            T_DM_GZ gzs
+                LEFT JOIN
+            (SELECT
+                 MAX(kq.id) id, MAX(ry.gz) gz
+             FROM
+                 t_kq_jbxx kq, t_ryk_jbxx ryk, t_ry_jbxx ry
+             WHERE ryk.sn = kq.cardsn
+               AND ry.id = ryk.ryid
+               AND kq.status = 0
+             GROUP BY cardsn) kq
+            ON gzs.id = kq.gz
+        WHERE 1 = 1
+    </select>
+    <!--  实时报警  -->
+    <select id="selOnlineAlarm" resultMap="OnLineAlarmResultMap">
+        SELECT a.id,a.`mc`,a.`cardID`,c.`gz`,a.`DT`,a.`messageType`,a.`inside_qyids` qyId,a.`inside_qymcs`,a.`layer_id`,a.`sourceStationID`
+        FROM t_alarm a
+                 LEFT JOIN t_ryk_jbxx b ON b.`sn` = a.`cardID`
+                 LEFT JOIN t_ry_jbxx c ON c.`id` = b.`ryid`
+        WHERE a.`status` = 0
+    </select>
+    <!--  实时实体定位  -->
+    <select id="selOnlinePeoPoint" resultMap="OnlinePeoPointResultMap">
+        SELECT a.`id`,b.`dt`,d.`mc`,d.`gh`,
+               d.`gz`,a.`layer_id`,b.`card_sn`,b.`geo_x`,b.`geo_y`,b.nearly_station1
+        FROM t_qy_jbxx a
+                 LEFT JOIN t_his b
+                           ON a.`layer_id` = b.`layer_id`
+                 LEFT JOIN t_ryk_jbxx c
+                           ON c.`sn` = b.`card_sn`
+                 LEFT JOIN t_ry_jbxx d
+                           ON d.`id` = c.`ryid`
+        where b.dt >= DATE_ADD(NOW(),INTERVAL -20 SECOND)
+        group by b.card_sn
+    </select>
+    <!--  实体信息  -->
+    <select id="selAllPeoInfo" resultMap="PersonInfoResultMap">
+        SELECT a.`id`,d.`sn`,b.`mc`,a.`gz`,a.`xb`,a.`bmid`,a.`zp`,a.`mc` as ryname,c.`YHID`
+        FROM t_ry_jbxx a
+                 LEFT JOIN t_ryk_jbxx d ON a.id = d.ryid
+                 LEFT JOIN `t_bm_jbxx` b
+                           ON a.`bmid` = b.`id`
+                 LEFT JOIN t_wh_yh c
+                           ON c.`YHID` = a.`id`
+    </select>
+    <!--  设备定位信息  -->
+    <select id="selApointLocInfo" resultMap="ApointLocInfoResultMap">
+        SELECT a.card_sn,e.mc,max(a.dt) as dt,a.xx,a.yy,a.layer_id,c.bjlx
+        FROM t_his_backup a
+                 LEFT JOIN t_ryk_jbxx d ON a.card_sn = d.sn
+                 LEFT JOIN t_ry_jbxx e ON e.id = d.ryid
+                 LEFT JOIN t_dm_layer b ON a.layer_id = b.id
+                 LEFT JOIN t_qy_alarm c ON a.card_sn = c.cardsn
+        WHERE  a.dt >= DATE_ADD(NOW(),INTERVAL -20 SECOND)
+        GROUP BY a.card_sn
+    </select>
+    <!-- 车辆速度计算 -->
+    <select id="calCarSpeed" resultMap="carSpeedResultMap">
+        SELECT
+            id,geo_x,dt
+        FROM
+            t_his
+        WHERE
+            card_sn = #{cardId} and dt BETWEEN #{startTime} AND #{endTime}
+    </select>
+    <!-- 人员卡基本信息 -->
+    <select id="selRykInfo" resultMap="selRykInfoResultMap">
+        SELECT
+            *
+        FROM
+            t_ryk_jbxx
+    </select>
+    <!-- 人员信息及经纬度信息 -->
+    <select id="selLoc" resultMap="selLocJAndWResultMap">
+        SELECT a.`id`,b.`sn`,c.`dt`,c.`xx`,c.`yy`,a.`mc`,c.`layer_id`
+        FROM t_ry_jbxx a
+                 LEFT JOIN t_ryk_jbxx b ON a.`id` = b.`ryid`
+                 LEFT JOIN t_his_backup c ON b.`sn` = c.`card_sn`
+                 LEFT JOIN t_dm_layer d ON c.`layer_id` = d.`id`
+                WHERE dt >= DATE_ADD(NOW(),INTERVAL -20 SECOND)
+        GROUP BY c.card_sn
+    </select>
+    <!--  获取所有人员信息  -->
+    <select id="getAll" resultMap="getAllResultMap">
+        SELECT a.`id`,b.`sn`,a.`mc`,a.`xb`,a.`bmid`,a.`gh`,c.mc as deptName,a.zwmc,a.gz,a.dw
+        FROM t_ry_jbxx a
+                 LEFT JOIN t_ryk_jbxx b ON b.ryid = a.id
+                 LEFT JOIN `t_bm_jbxx` c
+                           ON c.id = a.bmid
+        /*SELECT a.uuid,a.zwid,d.mc,c.id AS bmid,c.mc AS bmmc,a.mc AS rymc,a.xb,b.sn,a.gz,a.dw
+        FROM t_ry_jbxx a
+                 LEFT JOIN t_ryk_jbxx b ON b.ryid = a.id
+                 LEFT JOIN t_bm_jbxx c ON c.id = a.bmid
+                 LEFT JOIN t_zw_jbxx d ON d.id = a.zwid*/
+    </select>
+    <!--  获取所有人员信息  -->
+    <select id="getAll1" resultMap="getAllResultMap1">
+        SELECT a.`id`,b.`sn`,a.`mc`,a.`xb`,a.`bmid`,a.`gh`,c.mc as deptName
+        FROM t_ry_jbxx a
+                 LEFT JOIN t_ryk_jbxx b ON b.ryid = a.id
+                 LEFT JOIN `t_bm_jbxx` c
+                           ON c.id = a.bmid
+    </select>
+    <!--  抬杆信息  -->
+    <select id="selCarInfo" resultMap="selCarInfoResultMap">
+        SELECT a.`carnum`,a.`cardid`,a.`dt`,a.`description`
+        FROM t_car a
+                 LEFT JOIN t_car_cardid b ON a.`carnum` = b.`carnum`
+        WHERE a.`pasted` = 1
+    </select>
+    <!--  不抬杠信息  -->
+    <select id="selCarInfo2" resultMap="selCarInfo2ResultMap">
+        SELECT a.`carnum`,a.`cardid`,a.`dt`,a.`description`
+        FROM t_car a
+                 LEFT JOIN t_car_cardid b ON a.`carnum` = b.`carnum`
+        WHERE a.`pasted` = 2
+    </select>
+    <select id="selectDevices" resultMap="DevicesResultMap">
+        SELECT id,layer_id FROM t_jz_jbxx
+    </select>
+    <select id="selectDevicesInfoById" resultMap="DevicesByIdResultMap">
+        select geo_x,geo_y from t_jz_jbxx where id = #{id}
+    </select>
+    <select id="selectPositions" resultMap="PositionsResultMap">
+        SELECT card_sn,dt FROM t_his_backup where dt >= DATE_ADD(NOW(),INTERVAL  -20.0 SECOND) GROUP BY card_sn
+    </select>
+    <select id="selectCardById" resultMap="DevicesByIdResultMap">
+        select xx,yy from t_his_backup where card_sn = #{cid} and dt >= DATE_ADD(NOW(),INTERVAL  -20 SECOND)
+    </select>
+    <select id="selectHisTrajectory" resultMap="HisTrajectoryResultMap">
+        SELECT
+            card_sn,dt
+        FROM
+            t_his_backup
+        where
+            card_sn = #{cardId} and dt BETWEEN #{startTime} AND #{endTime}
+    </select>
+    <select id="selectHisTr" resultMap="DevicesByIdResultMap">
+        select xx,yy from t_his_backup where card_sn = #{cardId} and dt = #{time}
+    </select>
+    <select id="selBarrierInfo" resultMap="BarrierResultMap">
+        select id,mc,layer_id from t_qy_jbxx
+    </select>
+    <select id="selectBarrierInfo" resultMap="Point1Result">
+        SELECT x11,y11,x22,y22,x33,y33,x44,y44 FROM t_qy_xy a LEFT JOIN t_dm_layer b ON a.`layer_id` = b.`id` WHERE b.id = #{id}
+    </select>
+    <select id="selWarnings" resultMap="WarningResultMap">
+        SELECT
+            d.mc,
+            a.cardsn,
+            a.bjlx,
+            a.dt,
+            a.layer_id,
+            b.bjlx AS worknum,
+            b.qyid
+        FROM
+            t_qy_alarm a
+                LEFT JOIN t_qy_bjsz b
+                          ON a.bjszid = b.id
+                left join t_ryk_jbxx c on a.cardsn = c.sn
+                left join t_ry_jbxx d on c.ryid = d.id
+    </select>
+    <select id="selStationId" resultMap="StationIdResultMap">
+        select station_id,layer_id from t_jz_jbxx
+    </select>
+    <select id="selectDm" resultType="com.ws.entity.XTZS">
+        select sjs from t_wh_xtsz where bm = 'e_n';
+    </select>
+
+    <select id="selectAllRegions" resultMap="PersonsResultMap">
+        SELECT (a.id) AS id,
+               a.card_sn,
+               c.mc,
+               c.dw,
+               a.xx,
+               a.yy,
+               (a.dt) AS dt,
+               e.floor
+        FROM  (
+                  SELECT s.* FROM (
+                                      SELECT MAX(id) AS id FROM `t_his` where
+                                      (inside_qyids is not null or inside_qyids != " ")
+                                      GROUP BY card_sn ) t
+                                      LEFT JOIN `t_his` AS s ON t.id=s.id ) a
+                  LEFT JOIN t_ryk_jbxx b
+                            ON a.card_sn = b.sn
+                  LEFT JOIN t_ry_jbxx c
+                            ON c.id = b.ryid
+                  LEFT JOIN t_dm_gz d
+                            ON d.`id` = c.`gz`
+                  LEFT JOIN t_dm_layer e
+                            ON a.layer_id = e.id
+        ORDER BY a.layer_id
+    </select>
+    <select id="selectAllRegion" resultMap="PersonResultMap">
+       /* SELECT (a.id) AS id,
+               a.card_sn,
+               c.mc,
+               c.dw,
+               a.xx,
+               a.yy,
+               (a.dt) AS dt,
+               e.floor
+        FROM  (
+            SELECT s.* FROM (
+            SELECT MAX(id) AS id FROM `t_his_backup` where  dt >= DATE_ADD(NOW(),INTERVAL -60 SECOND)
+            and
+            (inside_qyids is not null or inside_qyids != " ")
+            GROUP BY card_sn ) t
+            LEFT JOIN `t_his_backup` AS s ON t.id=s.id ) a
+            LEFT JOIN t_ryk_jbxx b
+        ON a.card_sn = b.sn
+            LEFT JOIN t_ry_jbxx c
+            ON c.id = b.ryid
+            LEFT JOIN t_dm_gz d
+            ON d.`id` = c.`gz`
+            LEFT JOIN t_dm_layer e
+            ON a.layer_id = e.id
+        ORDER BY a.layer_id*/
+       SELECT (a.id) AS id,
+              a.card_sn,
+              c.mc,
+              c.`xb`,
+              c.`zwmc`,
+              d.`MC` AS worktype,
+              a.geo_x,
+              a.geo_y,
+              (a.dt) AS dt,
+              a.layer_id,
+              e.floor,
+              a.nearly_station1,
+              e.dm,
+              e.number1
+#                f.`speed`,
+#                c.type
+       FROM  (
+                 SELECT s.* FROM (
+                                     SELECT MAX(id) AS id FROM `t_his` where dt >= DATE_ADD(NOW(),INTERVAL -60 SECOND)
+                                     GROUP BY card_sn ) t
+                                     LEFT JOIN `t_his` AS s ON t.id=s.id ) a
+                 LEFT JOIN t_ryk_jbxx b
+                           ON a.card_sn = b.sn
+                 LEFT JOIN t_ry_jbxx c
+                           ON c.id = b.ryid
+                 LEFT JOIN t_dm_gz d
+                           ON d.`id` = c.`gz`
+                 LEFT JOIN t_dm_layer e
+                           ON a.layer_id = e.id
+#                   LEFT JOIN t_speed f
+#                             ON b.`sn` = f.`cardid`
+#         WHERE f.dt >= DATE_ADD(NOW(),INTERVAL -60 SECOND)
+       ORDER BY a.layer_id
+    </select>
+    <select id="selFenceAlarmInfo" resultMap="selFenceAlarmInfoResultMap">
+        SELECT a.id,a.dt,a.cardsn,a.bjlx,a.layer_id,a.layer_name,c.mc
+        FROM t_qy_alarm a
+                 LEFT JOIN t_ryk_jbxx b ON a.cardsn = b.sn
+                 LEFT JOIN t_ry_jbxx c ON c.id = b.ryid
+            -- WHERE dt >= DATE_ADD(NOW(),INTERVAL -20 SECOND)
+            AND STATUS = 0
+    /*SELECT a.uuid,a.dt,a.cardid,a.messageType,a.layer_name,c.mc,a.cljg,a.geo_x,a.geo_y,a.clsj,c.dw FROM t_alarm
+    a LEFT JOIN t_ryk_jbxx b ON a.cardid = b.sn LEFT JOIN t_ry_jbxx c ON c.id = b.ryid*/
+    </select>
+    <select id="selInOrOutInfo" resultMap="InOrOutResultMap">
+        SELECT d.mc ryName,IFNULL(e.mc,'无') empName,c.`sn` cardsn,d.zwmc zwmc,a.qymc qymc,a.starttime starttime,
+        IF(a.STATUS='0', ' ' , a.outstarttime) outtime
+        FROM (SELECT  *  FROM
+        (SELECT  a.*,  b.mc qymc  FROM  t_kq_jbxx a
+        LEFT JOIN  T_kq_qysz b ON a.szid =b.`id`
+         WHERE a.`starttime` >= DATE_ADD(NOW(), INTERVAL -24 hour)
+        ORDER BY a.starttime) a
+        GROUP BY cardsn) a
+        LEFT JOIN t_ryk_jbxx c ON a.cardsn = c.sn
+        LEFT JOIN t_ry_jbxx d  ON c.ryid = d.id
+        LEFT JOIN t_bm_jbxx e  ON d.bmid = e.id
+        ORDER BY a.starttime DESC
+    </select>
+
+    <select id="selPersonInfoByCard" resultMap="PerResultMap">
+        SELECT (a.id) AS id,
+               a.card_sn,
+               c.mc,
+               c.`xb`,
+               c.`zwmc`,
+               d.`MC` AS worktype,
+               a.xx,
+               a.yy,
+               (a.dt) AS dt,
+               a.layer_id,
+               e.floor,
+               a.nearly_station1,
+               e.dm
+        FROM  (
+                  SELECT s.* FROM (
+                                      SELECT MAX(id) AS id FROM `t_his`
+                                      GROUP BY card_sn) t
+                                      LEFT JOIN `t_his` AS s ON t.id=s.id ) a
+                  LEFT JOIN t_ryk_jbxx b
+                            ON a.card_sn = b.sn
+                  LEFT JOIN t_ry_jbxx c
+                            ON c.id = b.ryid
+                  LEFT JOIN t_dm_gz d
+                            ON d.`id` = c.`gz`
+                  LEFT JOIN t_dm_layer e
+                            ON a.layer_id = e.id
+                  where card_sn = #{cardId}
+        ORDER BY a.layer_id
+    </select>
+    <select id="getBattery" resultMap="BatteryResultMap">
+        SELECT cardid,v FROM t_rssi_backup GROUP BY CARDID
+    </select>
+    <select id="getStationPos" resultMap="StationPosResultMap">
+        SELECT station_id,geo_x,geo_y from t_jz_jbxx
+    </select>
+    <insert id="insertRyk">
+        insert into t_ryk_jbxx(ryid, sn) value(#{ryId}, #{cardSn})
+        <selectKey keyColumn="id" keyProperty="id" resultType="int" order="AFTER">
+            select @@identity as id
+        </selectKey>
+    </insert>
+    <update id="updateRyk">
+        update t_ryk_jbxx set sn = #{cardSn} where ryid = #{ryId}
+    </update>
+    <delete id="deleteRyk">
+        delete from t_ryk_jbxx where ryid = #{ryId}
+    </delete>
+    <insert id="inserGateWay">
+        insert into t_jz_jbxx(id,mc,type,station_id,layer_id,geo_x,geo_y,geo_z,ip)
+        value(#{id},#{mc},#{type},#{station_id},#{layer_id},#{geo_x},#{geo_y},#{geo_z},#{ip})
+    </insert>
+    <update id="updGateWay">
+        update t_jz_jbxx set mc=#{mc},type=#{type},station_id=#{station_id},layer_id=#{layer_id},
+                  geo_x=#{geo_x},geo_y=#{geo_y},geo_z=#{geo_z},ip=#{ip}
+        where id = #{id}
+    </update>
+    <delete id="delGateWay">
+        delete from t_jz_jbxx where id=#{id}
+    </delete>
+    <select id="selGateWay" resultMap="GateWayMap">
+        select id,mc,type,station_id,layer_id,geo_x,geo_y,geo_z,ip from t_jz_jbxx where type = #{type}
+    </select>
+    <select id="selGateWayByStatId" resultMap="GateWayMap">
+        select id,mc,type,station_id,layer_id,geo_x,geo_y,geo_z,ip from t_jz_jbxx where station_id = #{station_id}
+    </select>
+    <select id="selRykInfoByCSn" resultMap="PerAndCardMap">
+        SELECT a.id,b.sn as cardId,a.mc AS ryName,c.mc AS bmName,d.MC AS gzName
+        FROM t_ry_jbxx a
+                 LEFT JOIN t_ryk_jbxx b ON a.id = b.ryid
+                 LEFT JOIN t_bm_jbxx c ON a.bmid = c.id
+                 LEFT JOIN t_dm_gz d ON a.gz = d.id
+        where  b.sn = #{cardSn}
+    </select>
+    <insert id="inserRyJbxx">
+        insert into t_ry_jbxx(id,mc,gh,xb,zwmc,gz)
+        value(#{id},#{ryName},#{gh},#{sex},#{zwmc},#{workType})
+    </insert>
+    <update id="updateRy">
+        update t_ry_jbxx set mc=#{ryName},gh=#{gh},xb=#{sex},zwmc=#{zwmc},gz=#{workType}
+        where id=#{id}
+    </update>
+    <delete id="delRyJbxx">
+        delete from t_ry_jbxx where id=#{id}
+    </delete>
+</mapper>

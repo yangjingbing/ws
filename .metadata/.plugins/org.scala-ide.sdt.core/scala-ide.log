@@ -1,0 +1,24 @@
+2021-09-11 10:41:55,633 ERROR [main] - System.err - [org.eclipse.jdt.launching] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2021-09-11 10:41:57,656 ERROR [Worker-14: Building workspace] - System.err - [org.eclipse.pde.ui] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2021-09-11 10:42:06,047 ERROR [main] - System.err - [org.eclipse.jdt.debug] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-01-12 17:46:42,641 ERROR [main] - System.err - [org.eclipse.jdt.launching] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-01-12 17:46:49,766 ERROR [main] - System.err - [org.eclipse.jdt.debug] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-01-12 17:46:50,911 ERROR [org.eclipse.jdt.internal.ui.text.JavaReconciler] - System.err - [org.eclipse.pde.ui] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-01-12 17:59:12,430 ERROR [main] - System.err - [org.eclipse.jdt.launching] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-01-12 17:59:16,242 ERROR [org.eclipse.jdt.internal.ui.text.JavaReconciler] - System.err - [org.eclipse.pde.ui] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-01-12 17:59:16,912 ERROR [main] - System.err - [org.eclipse.jdt.debug] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-01-12 18:04:13,699 ERROR [main] - System.err - [org.eclipse.jdt.launching] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-01-12 18:04:17,572 ERROR [org.eclipse.jdt.internal.ui.text.JavaReconciler] - System.err - [org.eclipse.pde.ui] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]
+2022-01-12 18:04:18,195 ERROR [main] - System.err - [org.eclipse.jdt.debug] error can't determine implemented interfaces of missing type org.eclipse.jdt.internal.core.manipulation.JavaElementLabelComposerCore
+ [Xlint:cantFindType]

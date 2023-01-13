@@ -1,0 +1,68 @@
+buildscript {
+    ext {
+        springBootVersion = '2.1.1.RELEASE'
+    }
+    repositories {
+    // 优先使用国内源
+    maven { url 'https://maven.aliyun.com/repository/public'}
+    mavenCentral()
+    }
+    dependencies {
+        // 让springboot支持gradle
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.1.RELEASE")
+    }
+}
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.1.1.RELEASE'
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+//使用spring boot
+apply plugin: 'io.spring.dependency-management'
+apply plugin: "org.springframework.boot"
+// 使用spring boot的自动依赖管理
+apply plugin: 'io.spring.dependency-management'
+
+group 'com.test'
+version '1.0-SNAPSHOT'
+
+// 指定java版本
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    maven {url 'https://maven.aliyun.com/repository/public'}
+    mavenCentral()
+}
+
+// 依赖列表
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    //数据源
+    compile 'mysql:mysql-connector-java:6.0.6'
+    // 配置Mybatis
+    compile 'org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.1'
+    // mybatis-generator core包
+    compile group: 'org.mybatis.generator',name:'mybatis-generator-core',version: '1.3.2'
+
+    // 接口文档生成工具
+    compile('io.springfox:springfox-swagger2:2.8.0')
+    compile('io.springfox:springfox-swagger-ui:2.8.0')
+
+    compile('com.fasterxml.jackson.core:jackson-databind:2.9.5')
+    compile('com.fasterxml.jackson.core:jackson-core:2.9.5')
+    compile('com.fasterxml.jackson.core:jackson-annotations:2.9.5')
+
+    compile('org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.2')
+    compile('mysql:mysql-connector-java')
+    compile('com.github.pagehelper:pagehelper-spring-boot-starter:1.2.3')
+}

@@ -1,0 +1,77 @@
+buildscript {
+    repositories {
+        flatDir {
+            dirs "$rootProject.projectDir/libs"
+        }
+        maven {
+            url "$mavenHost"
+        }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'war'
+
+ext {
+    commonPath = "src/main/profile/common"
+
+    profilePath = "src/main/profile/${profile}"
+    profileTargetPath = "src/main/resources/profile/target"
+
+    evolutionTargetPath = "src/main/resources/scripts/conf/profile/target"
+
+    certPathWithProfile = "${profilePath}/ssl-cert"
+
+}
+
+dependencies {
+    compile project(':service')
+    //providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+}
+
+
+
+task copyProfile1(type: Copy) {
+    from("${commonPath}") {
+        include '*'
+        exclude ''
+        exclude 'ssl-cert'
+    }
+    from("${profilePath}") {
+        include '*'
+        exclude ''
+        exclude 'evolution'
+        exclude 'ssl-cert'
+    }
+    into "${profileTargetPath}"
+}
+
+
+task copyProfile2(type: Copy) {
+    from("${profileTargetPath}") {
+        include 'application.properties'
+        include 'logback.xml'
+    }
+    into "src/main/resources/"
+}
+
+task copyResources {
+    dependsOn << copyProfile1
+    dependsOn << copyProfile2
+}
+
+clean.doFirst {
+    delete "${profileTargetPath}"
+}
+
+build.dependsOn {
+    copyResources
+}
+
+uploadArchives.enabled = false
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'

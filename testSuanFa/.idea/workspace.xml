@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ee70bcdf-a5d3-4d34-bf1a-3c35359b33ea" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1p3gnus3ZL5WUmTQ8pLBH7ivfik" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Test_20">
+    <configuration name="Test_17_MonkeyEatTao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yjb.test.Test_17_MonkeyEatTao" />
+      <module name="testSuanFa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yjb.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_18" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yjb.test.Test_18" />
+      <module name="testSuanFa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yjb.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yjb.test.Test_19" />
+      <module name="testSuanFa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yjb.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yjb.test.Test_20" />
+      <module name="testSuanFa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yjb.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_99chengfa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yjb.test.Test_99chengfa" />
+      <module name="testSuanFa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yjb.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test_20" />
+        <item itemvalue="Application.Test_19" />
+        <item itemvalue="Application.Test_18" />
+        <item itemvalue="Application.Test_17_MonkeyEatTao" />
+        <item itemvalue="Application.Test_99chengfa" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee70bcdf-a5d3-4d34-bf1a-3c35359b33ea" name="Default Changelist" comment="" />
+      <created>1614417357345</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614417357345</updated>
+      <workItem from="1614417361335" duration="5389000" />
+      <workItem from="1614524374053" duration="607000" />
+      <workItem from="1614584733610" duration="2561000" />
+      <workItem from="1614663583222" duration="6319000" />
+      <workItem from="1614734132547" duration="2946000" />
+      <workItem from="1614769802846" duration="738000" />
+      <workItem from="1614822238135" duration="2319000" />
+      <workItem from="1615191513651" duration="4720000" />
+      <workItem from="1615370104651" duration="363000" />
+      <workItem from="1616047772975" duration="3282000" />
+      <workItem from="1616054053771" duration="652000" />
+      <workItem from="1616380341251" duration="6202000" />
+      <workItem from="1616464220550" duration="599000" />
+      <workItem from="1616471750922" duration="1252000" />
+      <workItem from="1616486718409" duration="1327000" />
+      <workItem from="1616570880086" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

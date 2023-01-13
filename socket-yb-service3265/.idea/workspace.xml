@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="38f4b5be-910e-485e-b4aa-3d8d45937908" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="socket-yb-service" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="socket-yb-service" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="socket-yb-service" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="socket-yb-service" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="socket-yb-service" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="socket-yb-service" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="socket-yb-service" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="socket-yb-service" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="socket-yb-service" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/applicationContext.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/cp/zf/service/CarServer.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/cp/zf/service/CarScjServer.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/cp/zf/service/AlarmServer.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/cp/zf/service/HisServer.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Program Files\apache-maven-3.5.2\m2\repository" />
+        <option name="mavenHome" value="D:/Program Files/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1uHxWYs1KVCagLmHa4KI67shxCc" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15332031" />
+    <property name="project.structure.side.proportion" value="0.2895981" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ZF_CODE\socket-yb-service\src\main\java\com" />
+      <recent name="D:\ZF_CODE\socket-yb-service\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cp.zf.service" />
+      <recent name="com.cp.zf.util" />
+      <recent name="com.cp.zf.bean" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ZF_CODE\socket-yb-service\libs" />
+      <recent name="D:\ZF_CODE\socket-yb-service" />
+      <recent name="D:\ZF_CODE\socket-yb-service\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle buildDependents" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.socket-yb-service [clean]">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="socket-yb-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="socket-yb-service [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="check" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="socket-yb-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="socket-yb-service [install]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="install" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="socket-yb-service [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="testClasses" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.socket-yb-service [testClasses]" />
+      <item itemvalue="Gradle.socket-yb-service [build]" />
+      <item itemvalue="Gradle.socket-yb-service [check]" />
+      <item itemvalue="Gradle.socket-yb-service [install]" />
+      <item itemvalue="Gradle.socket-yb-service [clean]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.socket-yb-service [clean]" />
+        <item itemvalue="Gradle.socket-yb-service [install]" />
+        <item itemvalue="Gradle.socket-yb-service [build]" />
+        <item itemvalue="Gradle.socket-yb-service [testClasses]" />
+        <item itemvalue="Gradle.socket-yb-service [check]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38f4b5be-910e-485e-b4aa-3d8d45937908" name="Default" comment="" />
+      <created>1624257682087</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624257682087</updated>
+      <workItem from="1624257687093" duration="5261000" />
+      <workItem from="1624336350460" duration="2015000" />
+      <workItem from="1624351109135" duration="2830000" />
+      <workItem from="1624515353902" duration="1021000" />
+      <workItem from="1624528794282" duration="2430000" />
+      <workItem from="1624682055733" duration="355000" />
+      <workItem from="1625216406775" duration="48000" />
+      <workItem from="1625623108509" duration="5552000" />
+      <workItem from="1626312217167" duration="27000" />
+      <workItem from="1631181100264" duration="1228000" />
+      <workItem from="1631519732505" duration="1335000" />
+      <workItem from="1632294602699" duration="2568000" />
+      <workItem from="1632318259972" duration="2223000" />
+      <workItem from="1632620379428" duration="5356000" />
+      <workItem from="1632813718677" duration="649000" />
+      <workItem from="1632899964959" duration="777000" />
+      <workItem from="1633681069029" duration="1272000" />
+      <workItem from="1633741228471" duration="13744000" />
+      <workItem from="1633929636077" duration="635000" />
+      <workItem from="1634019927643" duration="3639000" />
+      <workItem from="1634090028823" duration="731000" />
+      <workItem from="1634520734273" duration="156000" />
+      <workItem from="1634548778080" duration="501000" />
+      <workItem from="1634716229987" duration="1892000" />
+      <workItem from="1634796626175" duration="239000" />
+      <workItem from="1635068661150" duration="24000" />
+      <workItem from="1635211921809" duration="18000" />
+      <workItem from="1635232779265" duration="71000" />
+      <workItem from="1636945819848" duration="3189000" />
+      <workItem from="1637113866733" duration="2633000" />
+      <workItem from="1637381411378" duration="30000" />
+      <workItem from="1637394140088" duration="695000" />
+      <workItem from="1637905168458" duration="2012000" />
+      <workItem from="1637999796001" duration="1388000" />
+      <workItem from="1638147434615" duration="764000" />
+      <workItem from="1638412481727" duration="2512000" />
+      <workItem from="1638514241429" duration="3928000" />
+      <workItem from="1638617942280" duration="324000" />
+      <workItem from="1638763533657" duration="6202000" />
+      <workItem from="1638853514306" duration="6477000" />
+      <workItem from="1638949750509" duration="1337000" />
+      <workItem from="1639384986325" duration="4953000" />
+      <workItem from="1639795080059" duration="1243000" />
+      <workItem from="1639802035190" duration="1202000" />
+      <workItem from="1639982803554" duration="1251000" />
+      <workItem from="1640135459410" duration="7148000" />
+      <workItem from="1640314085661" duration="1168000" />
+      <workItem from="1640566610991" duration="29000" />
+      <workItem from="1640913739115" duration="3164000" />
+      <workItem from="1641261006410" duration="2561000" />
+      <workItem from="1641365543242" duration="2681000" />
+      <workItem from="1641529965324" duration="632000" />
+      <workItem from="1641958224303" duration="2326000" />
+      <workItem from="1642144115707" duration="1064000" />
+      <workItem from="1642487091987" duration="1560000" />
+      <workItem from="1644832031399" duration="1706000" />
+      <workItem from="1644887554542" duration="13396000" />
+      <workItem from="1644974822640" duration="4970000" />
+      <workItem from="1645064538702" duration="326000" />
+      <workItem from="1645088869425" duration="602000" />
+      <workItem from="1645333454229" duration="858000" />
+      <workItem from="1645510299471" duration="2305000" />
+      <workItem from="1646016681570" duration="32000" />
+      <workItem from="1646295257159" duration="29000" />
+      <workItem from="1646875147747" duration="3249000" />
+      <workItem from="1647834224068" duration="35000" />
+      <workItem from="1649232258699" duration="5745000" />
+      <workItem from="1649642131265" duration="21000" />
+      <workItem from="1649645016396" duration="26000" />
+      <workItem from="1649657020034" duration="678000" />
+      <workItem from="1650330613360" duration="4763000" />
+      <workItem from="1650359775274" duration="1243000" />
+      <workItem from="1650446792371" duration="1618000" />
+      <workItem from="1650503081430" duration="37000" />
+      <workItem from="1650531056754" duration="1763000" />
+      <workItem from="1650594873794" duration="3614000" />
+      <workItem from="1651029630394" duration="1395000" />
+      <workItem from="1651732312613" duration="4220000" />
+      <workItem from="1651801556953" duration="786000" />
+      <workItem from="1651888194490" duration="1958000" />
+      <workItem from="1652155022219" duration="3834000" />
+      <workItem from="1652350408679" duration="30000" />
+      <workItem from="1652596960305" duration="1827000" />
+      <workItem from="1652663703053" duration="10000" />
+      <workItem from="1653017662272" duration="904000" />
+      <workItem from="1653018636878" duration="434000" />
+      <workItem from="1653356645479" duration="42000" />
+      <workItem from="1654480111161" duration="671000" />
+      <workItem from="1654484143458" duration="1249000" />
+      <workItem from="1654502300291" duration="329000" />
+      <workItem from="1654502868835" duration="1130000" />
+      <workItem from="1654823478023" duration="5361000" />
+      <workItem from="1655082942550" duration="976000" />
+      <workItem from="1655112012951" duration="37000" />
+      <workItem from="1655363748332" duration="1876000" />
+      <workItem from="1655884108618" duration="4295000" />
+      <workItem from="1655888863358" duration="731000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

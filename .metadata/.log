@@ -1,0 +1,987 @@
+!SESSION 2021-09-11 10:39:22.314 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface.text 2 0 2021-09-11 10:39:55.983
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-09-11 10:40:03.990
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\sg'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:44.118
+!MESSAGE Invalid ZIP archive: interface/lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:44.126
+!MESSAGE Invalid ZIP archive: interface/lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:44.131
+!MESSAGE Invalid ZIP archive: interface/lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:44.137
+!MESSAGE Invalid ZIP archive: interface/lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:44.141
+!MESSAGE Invalid ZIP archive: interface/lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:44.142
+!MESSAGE Invalid ZIP archive: interface/lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:44.153
+!MESSAGE Invalid ZIP archive: interface/lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:44.154
+!MESSAGE Invalid ZIP archive: interface/lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:44.172
+!MESSAGE Invalid ZIP archive: interface/lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:44.181
+!MESSAGE Invalid ZIP archive: interface/lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:44.185
+!MESSAGE Invalid ZIP archive: interface/lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:44.187
+!MESSAGE Invalid ZIP archive: interface/lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:44.191
+!MESSAGE Invalid ZIP archive: interface/out/artifacts/interface_jar/interface.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.596
+!MESSAGE Invalid ZIP archive: interface/lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.605
+!MESSAGE Invalid ZIP archive: interface/lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.614
+!MESSAGE Invalid ZIP archive: interface/lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.625
+!MESSAGE Invalid ZIP archive: interface/lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.631
+!MESSAGE Invalid ZIP archive: interface/lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.632
+!MESSAGE Invalid ZIP archive: interface/lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.645
+!MESSAGE Invalid ZIP archive: interface/lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.645
+!MESSAGE Invalid ZIP archive: interface/lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.659
+!MESSAGE Invalid ZIP archive: interface/lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.664
+!MESSAGE Invalid ZIP archive: interface/lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.668
+!MESSAGE Invalid ZIP archive: interface/lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.669
+!MESSAGE Invalid ZIP archive: interface/lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.674
+!MESSAGE Invalid ZIP archive: interface/out/artifacts/interface_jar/interface.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.889
+!MESSAGE Invalid ZIP archive: interface/lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.891
+!MESSAGE Invalid ZIP archive: interface/lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.893
+!MESSAGE Invalid ZIP archive: interface/lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.899
+!MESSAGE Invalid ZIP archive: interface/lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.902
+!MESSAGE Invalid ZIP archive: interface/lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.903
+!MESSAGE Invalid ZIP archive: interface/lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.909
+!MESSAGE Invalid ZIP archive: interface/lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.909
+!MESSAGE Invalid ZIP archive: interface/lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.914
+!MESSAGE Invalid ZIP archive: interface/lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.916
+!MESSAGE Invalid ZIP archive: interface/lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.919
+!MESSAGE Invalid ZIP archive: interface/lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.920
+!MESSAGE Invalid ZIP archive: interface/lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:42:50.922
+!MESSAGE Invalid ZIP archive: interface/out/artifacts/interface_jar/interface.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:37.832
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:37.839
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:37.843
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:37.848
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:37.851
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:37.852
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:37.864
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:37.865
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:37.876
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:37.880
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:37.883
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:37.884
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:51.838
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:51.847
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:51.853
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:51.860
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:51.866
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:51.867
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:51.881
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:51.881
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:51.895
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:51.901
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:51.905
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:51:51.907
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:34.256
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:34.265
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:34.270
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:34.278
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:34.282
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:34.283
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:34.296
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:34.296
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:34.309
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:34.314
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:34.319
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:34.320
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:43.379
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:43.388
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:43.394
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:43.405
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:43.409
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:43.410
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:43.425
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:43.426
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:43.443
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:43.449
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:43.454
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2021-09-11 10:55:43.455
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+!SESSION 2022-01-12 17:46:11.834 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface.text 2 0 2022-01-12 17:46:39.626
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:46:45.931
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:46:46.289
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:46:46.849
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-01-12 17:46:47.484
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\sg'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:46:47.501
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:46:47.700
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:46:47.703
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:46:48.341
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:46:48.345
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:46:48.869
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:46:49.163
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:46:49.477
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:46:49.513
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.619
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.632
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.640
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.653
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.660
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.661
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.681
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.682
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.702
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.709
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.716
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.718
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.902
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.918
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.932
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.946
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.955
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.956
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.982
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:17.983
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:18.008
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:18.018
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:18.027
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:48:18.029
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.ui 4 0 2022-01-12 17:48:28.893
+!MESSAGE The proxied handler for 'org.scalaide.refactoring.internal.OrganizeImports' could not be loaded
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in "org.scala-ide.sdt.core" was unable to instantiate class "org.scalaide.refactoring.internal.OrganizeImports".
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:216)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:210)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:355)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:234)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:134)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:320)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:164)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:84)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:865)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:179)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:223)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:474)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:500)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5148)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4797)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2153)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4770)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2153)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4770)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2153)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4770)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3545)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/util/TypeNameMatchCollector
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getDeclaredConstructor(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:206)
+	... 72 more
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.util.TypeNameMatchCollector cannot be found by org.scala-ide.sdt.core_4.7.0.v-2_12-201709291352-71a28d0
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:511)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 77 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2022-01-12 17:48:28.895
+!MESSAGE Plug-in "org.scala-ide.sdt.core" was unable to instantiate class "org.scalaide.refactoring.internal.OrganizeImports".
+!STACK 0
+java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/corext/util/TypeNameMatchCollector
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getDeclaredConstructor(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:206)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:355)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:234)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:134)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:320)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:164)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:84)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:865)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:179)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:223)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:474)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:500)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5148)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4797)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2153)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4770)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2153)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4770)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2153)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4770)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3545)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.corext.util.TypeNameMatchCollector cannot be found by org.scala-ide.sdt.core_4.7.0.v-2_12-201709291352-71a28d0
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:511)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 77 more
+!SESSION 2022-01-12 17:58:52.546 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface.text 2 0 2022-01-12 17:59:10.529
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:15.114
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:15.136
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:15.149
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:15.184
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:15.195
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:15.197
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:15.231
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:15.233
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:15.256
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:15.265
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:15.275
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:15.277
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-01-12 17:59:16.271
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\sg'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:23.404
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:23.424
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:23.437
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:23.476
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:23.484
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:23.485
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:23.513
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:23.513
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:23.537
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:23.585
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:23.597
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 17:59:23.599
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+!SESSION 2022-01-12 18:03:55.848 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\ZF_CODE -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface.text 2 0 2022-01-12 18:04:11.733
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:04:16.297
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:04:16.310
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:04:16.325
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:04:16.350
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:04:16.470
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:04:16.472
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:04:16.497
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:04:16.498
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:04:16.518
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:04:16.529
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:04:16.538
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:04:16.541
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-01-12 18:04:17.692
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\sg'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.481
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.495
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.503
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.518
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.524
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.525
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.548
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.549
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.570
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.577
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.603
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.605
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.892
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.903
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.910
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.918
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.922
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.923
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.936
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.937
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.951
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.956
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.961
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:05:23.962
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:12:08.091
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:12:08.104
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:12:08.113
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:12:08.128
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:12:08.135
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:12:08.136
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:12:08.157
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:12:08.158
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:12:08.177
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:12:08.185
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:12:08.192
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:12:08.194
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.jface.text 2 0 2022-01-12 18:13:26.053
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2022-01-12 18:13:26.178
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jdt.debug 2 0 2022-01-12 18:21:03.249
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:22:49.957
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:22:49.964
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:22:49.969
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:22:49.975
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:22:49.979
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:22:49.979
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:22:49.991
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:22:49.991
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:22:50.008
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:22:50.012
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:22:50.017
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:22:50.018
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:23:50.342
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:23:50.352
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:23:50.361
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:23:50.371
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:23:50.378
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:23:50.379
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:23:50.400
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:23:50.401
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:23:50.416
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:23:50.421
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:23:50.426
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:23:50.428
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2022-01-12 18:23:50.765
+!MESSAGE Taglib Index ZipException: D:/ZF_CODE/interface/interface/lib/spring-core-5.1.10.RELEASE.jar error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2022-01-12 18:23:50.777
+!MESSAGE Taglib Index ZipException: D:/ZF_CODE/interface/interface/lib/cxf-2.6.16.jar error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2022-01-12 18:23:50.779
+!MESSAGE Taglib Index ZipException: D:/ZF_CODE/interface/interface/lib/guava-18.0.jar error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2022-01-12 18:23:50.781
+!MESSAGE Taglib Index ZipException: D:/ZF_CODE/interface/interface/lib/ojdbc6.jar error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2022-01-12 18:23:50.788
+!MESSAGE Taglib Index ZipException: D:/ZF_CODE/interface/interface/lib/xmlbeans-2.5.0.jar error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2022-01-12 18:23:50.790
+!MESSAGE Taglib Index ZipException: D:/ZF_CODE/interface/interface/lib/jaxb-xjc-2.2.5.1.jar error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2022-01-12 18:23:50.794
+!MESSAGE Taglib Index ZipException: D:/ZF_CODE/interface/interface/lib/aspectjweaver.jar error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2022-01-12 18:23:50.795
+!MESSAGE Taglib Index ZipException: D:/ZF_CODE/interface/interface/lib/spring.jar error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2022-01-12 18:23:50.797
+!MESSAGE Taglib Index ZipException: D:/ZF_CODE/interface/interface/lib/jaxb-impl-2.2.5.1.jar error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2022-01-12 18:23:50.826
+!MESSAGE Taglib Index ZipException: D:/ZF_CODE/interface/interface/lib/xalan-2.7.1.jar error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2022-01-12 18:23:50.863
+!MESSAGE Taglib Index ZipException: D:/ZF_CODE/interface/interface/lib/opensaml-2.5.1-1.jar error in opening zip file
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2022-01-12 18:23:50.866
+!MESSAGE Taglib Index ZipException: D:/ZF_CODE/interface/interface/lib/ehcache-core-2.5.1.jar error in opening zip file
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:24:09.022
+!MESSAGE Invalid ZIP archive: lib/aspectjweaver.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:24:09.034
+!MESSAGE Invalid ZIP archive: lib/cxf-2.6.16.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:24:09.041
+!MESSAGE Invalid ZIP archive: lib/ehcache-core-2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:24:09.052
+!MESSAGE Invalid ZIP archive: lib/guava-18.0.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:24:09.058
+!MESSAGE Invalid ZIP archive: lib/jaxb-impl-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:24:09.059
+!MESSAGE Invalid ZIP archive: lib/jaxb-xjc-2.2.5.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:24:09.079
+!MESSAGE Invalid ZIP archive: lib/ojdbc6.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:24:09.079
+!MESSAGE Invalid ZIP archive: lib/opensaml-2.5.1-1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:24:09.097
+!MESSAGE Invalid ZIP archive: lib/spring-core-5.1.10.RELEASE.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:24:09.104
+!MESSAGE Invalid ZIP archive: lib/spring.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:24:09.110
+!MESSAGE Invalid ZIP archive: lib/xalan-2.7.1.jar [in interface]
+
+!ENTRY org.eclipse.jdt.core 4 0 2022-01-12 18:24:09.111
+!MESSAGE Invalid ZIP archive: lib/xmlbeans-2.5.0.jar [in interface]

@@ -1,0 +1,148 @@
+if (!project.hasProperty("profile")) {
+    ext.profile = "prod"
+}
+
+allprojects {
+    apply {
+        plugin 'idea'
+    }
+
+    ext {
+        versionPrefix = '1.0'
+
+        if (profile == 'prod') {
+            envSuffix = '-SNAPSHOT'
+        } else {
+            envSuffix = '-SNAPSHOT'
+        }
+
+        mavenHost = 'http://maven.aliyun.com/nexus/content/groups/public/'
+
+    }
+}
+
+buildscript {
+    repositories {
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    dependencies {
+        classpath("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.6")
+    }
+}
+
+
+
+subprojects {
+    group = 'com.cp.csjj'
+
+    version = versionPrefix + envSuffix
+
+    apply {
+        plugin 'idea'
+        plugin 'scala'
+        plugin 'java'
+        plugin 'maven'
+        //plugin 'org.sonarqube'
+    }
+
+    ext {
+        scalaVersion = '2.11'
+        scalaMinor = '8'
+
+
+
+        releaseRepo = mavenHost
+        snapshotRepo = mavenHost
+
+        uploadGroupId = group
+        if (profile == 'prod') {
+            currentUploadRepo = releaseRepo
+        } else {
+            currentUploadRepo = snapshotRepo
+        }
+
+        springBootVersion = '2.0.1.RELEASE'
+
+    }
+
+    configurations {
+        scalaCompiler
+        scalaLibrary
+    }
+
+    sourceSets {
+        main {
+            scala {
+                srcDirs = ['src/main/scala', 'src/main/java']
+            }
+            java {
+                srcDirs = []
+            }
+            resources {
+                srcDir 'src/main/resources'
+            }
+        }
+        test {
+            scala {
+                srcDirs = ['src/test/scala', 'src/test/java']
+            }
+            java {
+                srcDirs = []
+            }
+            resources {
+                srcDir 'src/test/resources'
+            }
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs "$rootProject.projectDir/libs"
+        }
+        maven {
+            url "$mavenHost"
+        }
+        maven {
+            url "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        }
+    }
+
+
+    task "create-dirs" << {
+        sourceSets*.java.srcDirs*.each{
+            it.mkdirs()
+        }
+        sourceSets*.resources.srcDirs*.each{
+            it.mkdirs()
+        }
+    }
+
+    tasks.withType(ScalaCompile) {
+        options.encoding = "UTF-8"
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+
+    [compileScala, compileJava, compileTestJava, javadoc]*.options*.encoding = "UTF-8"
+    dependencies {
+        scalaCompiler "org.scala-lang:scala-compiler:$scalaVersion.$scalaMinor"
+        scalaLibrary "org.scala-lang:scala-library:$scalaVersion.$scalaMinor"
+        compile "org.scala-lang:scala-library:$scalaVersion.$scalaMinor",
+                "org.scalaz:scalaz-core_$scalaVersion:7.3.0-M7"
+    }
+
+    task sourcesJar(type: Jar, dependsOn: classes) {
+        classifier = 'sources'
+        from sourceSets.main.allSource
+    }
+
+    artifacts {
+        archives sourcesJar
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.8'
+}

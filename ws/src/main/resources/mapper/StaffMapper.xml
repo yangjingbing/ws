@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ws.mapper.StaffMapper">
+    <resultMap id="StaffResultMap" type="com.ws.entity.Staff">
+        <id column="id" property="id"/>
+        <result column="gh" property="gh"/>
+        <result column="mc" property="mc"/>
+<!--        <result column="bmid" property="bmid"/>-->
+<!--        <result column="bmmc" property="bmmc"/>-->
+<!--        <result column="zwid" property="zwid"/>-->
+        <result column="zwmc" property="zwmc"/>
+        <result column="gz" property="gz"/>
+        <result column="gzmc" property="gzmc"/>
+        <result column="xb" property="sex"/>
+        <result column="sjh1" property="sjh1"/>
+        <result column="zjh" property="zjh"/>
+        <result column="zp" property="zp"/>
+        <result column="zpsmall" property="zpsmall"/>
+        <result column="zpbig" property="zpbig"/>
+        <result column="xx" property="xx"/>
+<!--        <result column="csrq" property="csrq"/>-->
+        <result column="zz" property="zz"/>
+        <result column="hkszd" property="hkszd"/>
+        <result column="dzyx" property="dzyx"/>
+        <result column="zjlx" property="zjlx"/>
+        <result column="zt" property="zt"/>
+        <result column="lrsj" property="lrsj"/>
+        <result column="lrr" property="lrr"/>
+        <result column="gz_show" property="gz_show"/>
+        <result column="color" property="color"/>
+        <result column="fjh" property="fjh"/>
+        <result column="mark" property="mark"/>
+        <result column="sn" property="card_sn"/>
+        <result column="gddh" property="gddh"/>
+        <result column="dwid" property="dwid"/>
+    </resultMap>
+    <resultMap id="PersonAlarmResultMap" type="com.ws.entity.StaffPersonAlarm">
+        <id column="id" property="id"/>
+        <result column="mc" property="personName"/>
+        <result column="cardid" property="card"/>
+        <result column="dt" property="time"/>
+        <result column="messageType" property="alarmType"/>
+        <result column="number1" property="layerId"/>
+        <result column="dm" property="layerName"/>
+        <result column="geo_x" property="x"/>
+        <result column="geo_y" property="y"/>
+        <result column="layer_id" property="buildingId"/>
+        <result column="dm" property="buildingName"/>
+        <result column="cljg" property="cljg"/>
+    </resultMap>
+    <!--<select id="getStaffByMark" parameterType="java.lang.Integer" resultType="com.ws.entity.Staff">
+        SELECT
+            a.id staffId,
+            a.gh jobNumber,
+            a.mc staffName,
+            b.codeId deptId,
+            b.mc deptName,
+            a.zwmc positionName,
+            c.mc workTypeName,
+            a.xb sex,
+            a.sjh1 mobilePhone,
+            a.zjh idCard
+        FROM
+            t_ry_jbxx a
+            LEFT JOIN t_bm_jbxx b ON b.id = a.bmid
+            LEFT JOIN t_dm_gz c ON c.id = a.gz
+        WHERE
+            a.mark = #{mark}
+    </select>
+    <update id="updateStaffById" parameterType="java.lang.Integer">
+        UPDATE t_ry_jbxx
+        SET mark = 0
+        WHERE
+            id = #{staffId}
+    </update>
+
+    <select id="getStaff" resultType="com.ws.entity.StaffNew">
+        SELECT
+            a.id staffId,
+            a.mc staffName,
+            b.sn cardNumber,
+            a.zjh idCard,
+            a.zt isDelete
+        FROM
+            t_ry_jbxx a
+            LEFT JOIN t_ryk_jbxx b ON a.id = b.ryid
+    </select>
+    <select id="getStaff1" resultType="com.ws.entity.StaffNew">
+        SELECT
+            a.id staffId,
+            a.mc staffName,
+            b.sn cardNumber,
+            a.zjh idCard,
+            a.zt isDelete
+        FROM
+            t_ry_jbxx a
+                LEFT JOIN t_ryk_jbxx b ON a.id = b.ryid
+        where
+            a.id in(select ryid from t_ryk_jbxx) and a.mc = #{mc}
+    </select>
+    <select id="getStaffByIdCard" resultMap="StaffResultMap">
+        SELECT a.*,b.mc as bmmc,b.dwid,c.`MC` as gzmc,d.`id` as zwid,e.sn
+        FROM t_ry_jbxx a
+                 LEFT JOIN t_bm_jbxx b ON a.`bmid` = b.`id`
+                 LEFT JOIN t_dm_gz c ON a.`gz` = c.`id`
+                 LEFT JOIN t_dm_zw d ON a.`zwmc` = d.`mc`
+                 LEFT JOIN t_ryk_jbxx e ON a.id = e.`ryid`
+        where a.mc = #{mc}
+    </select>
+    <select id="pushData" resultMap="StaffResultMap">
+        SELECT a.id,a.`mc`,a.`zp`,a.`zpsmall`,a.`zpbig`,a.`gh`,a.`zwmc`,
+               a.`xb`,a.`xx`,a.`zz`,a.`hkszd`,a.`gddh`,a.`sjh1`,
+               a.`dzyx`,a.`zjlx`,a.`zjh`,a.`zt`,a.`lrsj`,a.`lrr`,a.`GZ_show`,a.`color`,
+               a.`gz`,a.`fjh`,a.`mark`,c.`MC` AS gzmc,e.sn,b.`dwid`
+        FROM t_ry_jbxx a
+                 LEFT JOIN t_bm_jbxx b ON a.`bmid` = b.`id`
+                 LEFT JOIN t_dm_gz c ON a.`gz` = c.`id`
+                 LEFT JOIN t_dm_zw d ON a.`zwmc` = d.`mc`
+                 LEFT JOIN t_ryk_jbxx e ON a.id = e.`ryid`
+
+    </select>
+    <select id="getStaff2" resultType="com.ws.entity.Staff1">
+        select zjh,zt,mark from t_ry_jbxx
+    </select>
+    <update id="updateStaffById1" parameterType="java.lang.Integer">
+        UPDATE t_ry_jbxx
+        SET mark = 2
+where
+       id = #{id}
+    </update>
+    <select id="pushData1" resultMap="StaffResultMap">
+        SELECT a.*,b.mc as bmmc,c.`MC` as gzmc,d.`id` as zwid,e.sn
+        FROM t_ry_jbxx a
+                 LEFT JOIN t_bm_jbxx b ON a.`bmid` = b.`id`
+                 LEFT JOIN t_dm_gz c ON a.`gz` = c.`id`
+                 LEFT JOIN t_dm_zw d ON a.`zwmc` = d.`mc`
+                 LEFT JOIN t_ryk_jbxx e ON a.id = e.`ryid`
+            where a.mc = #{mc}
+    </select>
+    <update id="updateStaffById2" parameterType="java.lang.Integer">
+        UPDATE t_ry_jbxx
+        SET mark = 1
+        WHERE
+            id = #{id}
+    </update>
+    <select id="getSendZT" resultType="com.ws.entity.SendZT">
+        select sendzt from t_ry_jbxx
+        where id = #{id}
+    </select>
+    <update id="updateStaffSendZT" parameterType="java.lang.Integer">
+        UPDATE t_ry_jbxx
+        SET sendzt = 2
+        WHERE
+            id = #{id}
+    </update>
+
+    <update id="updateStaffZT" parameterType="java.lang.Integer">
+        UPDATE t_ry_jbxx
+        SET zt = 1
+        WHERE
+            id = #{id}
+    </update>
+    <update id="updateStaffSendZT1" parameterType="java.lang.Integer">
+        UPDATE t_ry_jbxx
+        SET sendzt = 1
+        WHERE
+            id = #{id}
+    </update>
+    <update id="updateStaffSendZT2" parameterType="java.lang.Integer">
+        UPDATE t_ry_jbxx
+        SET sendzt = 3
+        WHERE
+            id = #{id}
+    </update>
+
+    <select id="getSendZTBD" resultType="com.ws.entity.SendZT">
+        select sendztbd from t_ry_jbxx
+        where id = #{id}
+    </select>
+    <update id="updateStaffSendZTBD" parameterType="java.lang.Integer">
+        UPDATE t_ry_jbxx
+        SET sendztbd = 2
+        WHERE
+            id = #{id}
+    </update>
+
+    <select id="getSendZTJB" resultType="com.ws.entity.SendZT">
+        select sendztjb from t_ry_jbxx
+        where id = #{id}
+    </select>
+    <update id="updateStaffSendZTJB" parameterType="java.lang.Integer">
+        UPDATE t_ry_jbxx
+        SET sendztjb = 2
+        WHERE
+            id = #{id}
+    </update>-->
+    <select id="pushAlarmData" resultMap="PersonAlarmResultMap">
+        SELECT a.id,c.mc,a.cardid,a.dt,a.messageType,d.number1,d.`dm`,a.geo_x,a.geo_y,a.`cljg` FROM t_alarm a
+        LEFT JOIN t_ryk_jbxx b ON a.cardid = b.sn
+        LEFT JOIN t_ry_jbxx c ON c.id = b.ryid
+        LEFT JOIN t_dm_layer d ON d.`id` = a.`layer_id`
+        LEFT JOIN t_his e ON a.dt = e.dt
+        WHERE a.`status` != 9 and sendzt = 0
+    </select>
+    <select id="getZtById" resultType="com.ws.entity.SendAlarmZT">
+        select sendzt from t_alarm
+        where id = #{id}
+    </select>
+    <update id="updateStaffAlarmSendZt" parameterType="java.lang.Integer">
+        UPDATE t_alarm
+        SET sendzt = 1
+        WHERE
+            id = #{id}
+    </update>
+</mapper>

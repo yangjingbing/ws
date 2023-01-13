@@ -1,0 +1,4 @@
+rootProject.name = 'zf-api-service'
+include 'app'
+include 'service'
+

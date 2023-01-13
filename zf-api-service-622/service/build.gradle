@@ -1,0 +1,75 @@
+
+dependencies {
+
+    compile "org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter-thymeleaf:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter-websocket:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter-data-redis:${springBootVersion}"
+
+
+
+    compile group: 'javax.el', name: 'javax.el-api', version: '3.0.1-b06'
+    compile group: 'org.glassfish', name: 'javax.el', version: '3.0.1-b11'
+
+
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
+    compile group: 'org.apache.httpcomponents', name: 'httpcore', version: '4.4.9'
+
+
+    compile group: 'com.xuxueli', name: 'xxl-excel', version: '1.1.1'
+
+
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.11.2'
+    compile('com.squareup.okio:okio:1.13.0') {
+        force = true
+    }
+
+
+    //compile 'io.springfox:springfox-swagger-ui:2.8.0'
+
+    compile 'org.apache.commons:commons-math3:3.6.1'
+    compile 'com.alibaba:fastjson:1.2.73'
+
+    //WS PLAY
+    compile 'com.typesafe.play:play-json_2.11:2.6.9'
+    compile ('com.typesafe.play:play-slick-evolutions_2.11:1.1.1'){
+        exclude module:"com.zaxxer:HikariCP-java6"
+    }
+    compile 'com.typesafe.play:play-ws-standalone_2.11:1.0.1'
+    compile 'com.typesafe.play:play-ahc-ws-standalone_2.11:1.0.1'
+    compile 'io.zipkin.brave:brave-instrumentation-spring-webmvc:4.14.3'
+
+    compile 'com.zaxxer:HikariCP:3.2.0'
+
+    compile 'com.aliyun.oss:aliyun-sdk-oss:3.10.2'
+
+    compile 'org.mybatis:mybatis:3.4.6'
+    compile ('com.baomidou:mybatis-plus-boot-starter:3.0.7.1'){
+        exclude module:"javax.persistence:persistence-api"
+    }
+    compile("tk.mybatis:mapper-spring-boot-starter:2.1.5"){
+        exclude module:"javax.persistence:persistence-api"   //tomcat启动报错
+    }
+
+
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.4'
+    compile 'io.springfox:springfox-swagger2:2.8.0'
+
+
+
+    compile 'io.zipkin.brave:brave-instrumentation-mysql:5.4.3'
+    compile 'mysql:mysql-connector-java:8.0.11'
+    //jwt
+    compile 'com.auth0:java-jwt:3.4.1'
+    compile 'com.jason-goodwin:authentikat-jwt_2.11:0.4.5'
+
+    compile 'org.apache.shiro:shiro-core:1.2.4'
+
+    compile 'com.alipay.sdk:alipay-sdk-java:4.10.209.ALL'
+
+    compile 'com.github.wxpay:wxpay-sdk:0.0.3'
+
+
+}
