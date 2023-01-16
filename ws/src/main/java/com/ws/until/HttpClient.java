@@ -8,11 +8,7 @@ import java.net.URL;
 import java.util.*;
 
 /**
- * @Description TODO .</br>
- * <></>
- * @Author gu
- * @Date 2021/1/26 12:54
- * @Version 1.0.0
+ * HTTP接口协议工具类
  **/
 public class HttpClient {
 

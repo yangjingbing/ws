@@ -9,7 +9,9 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * 通过读取数据库的值来进行经纬度的转换，在初期核准经纬度时使用
+ */
 /*
 @Component
 public class ConvertUtil {
@@ -140,6 +142,10 @@ SplitAndRound(lat,6);
 //yanjv24.77,15.13,213.91,698.72,116.3408519036,36.4798916981,116.3439319358,36.4858127248,7.4843053
 //package com.ws.until;
 
+
+/**
+ * 固定写死经纬度转换的值，在调试经纬度准确时使用
+ */
 @Component
 public class ConvertUtil {
     /*private static double[] xy1 = {38.14,34.75};

@@ -26,21 +26,37 @@ public class CommonController {
         return "人员定位接口";
     }
 
+    /**
+     * 查询所有工种
+     * @return
+     */
     @RequestMapping("/selWorkType")
     public RestUntil selWorkType() {
         return service.selWorkType();
     }
 
+    /**
+     * 查询各区域在线人员位置信息
+     * @return
+     */
     @RequestMapping("/selRegionPersonPoint")
     public RestUntil selRegionPersonPoint() {
         return service.selRegionPersonPoint();
     }
 
+    /**
+     * 查询人员报警信息
+     * @return
+     */
     @RequestMapping("/selectPersonAlarm")
     public RestUntil selectPersonAlarm(){
         return service.selectPersonAlarm();
     }
 
+    /**
+     * 查询人员进出记录
+     * @return
+     */
     @RequestMapping("/selAccessRecord")
     public RestUntil selectAccessRecord(){
         return service.selectAccessRecord();
@@ -190,6 +206,10 @@ public class CommonController {
     @RequestMapping("/warn/getWarnings")
     public RestUntil getWarnings(){return service.getWarnings();}
 
+    /**
+     * 获取所有基站编号
+     * @return
+     */
     @RequestMapping("/getStationId")
     public RestUntil getStationId(){return service.getStaionId();}
 

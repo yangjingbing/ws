@@ -21,6 +21,10 @@ public class CommonServiceImpl implements CommonService {
     private CommonMapper commonMapper;
 
 
+    /**
+     *查询所有工种
+     * @return
+     */
     @Override
     public RestUntil selWorkType() {
         RestUntil restUntil = new RestUntil();
@@ -111,6 +115,10 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }*/
 
+    /**
+     * 查询人员报警信息
+     * @return
+     */
     @Override
     public RestUntil selectPersonAlarm() {
 
@@ -167,6 +175,10 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 查询人员进出记录
+     * @return
+     */
     @Override
     public RestUntil selectAccessRecord() {
         RestUntil restUntil = new RestUntil();
@@ -730,6 +742,10 @@ public class CommonServiceImpl implements CommonService {
         return restUntil1;
     }
 
+    /**
+     * 获取实时定位
+     * @return
+     */
     @Override
     public RestUntil1 getRealtimePos() {
         RestUntil1 restUntil1 = new RestUntil1();
@@ -771,6 +787,13 @@ public class CommonServiceImpl implements CommonService {
         return restUntil1;
     }
 
+    /**
+     * 根据卡号以及时间段查询轨迹
+     * @param cardId
+     * @param startTime
+     * @param endTime
+     * @return
+     */
     @Override
     public RestUntil1 getTrajectory(Integer cardId, String startTime, String endTime) {
         RestUntil1 restUntil1 = new RestUntil1();
@@ -811,6 +834,10 @@ public class CommonServiceImpl implements CommonService {
         return restUntil1;
     }
 
+    /**
+     * 获取电子围栏区域信息
+     * @return
+     */
     @Override
     public RestUntil1 getBarrierInfo() {
         RestUntil1 restUntil1 = new RestUntil1();
@@ -860,6 +887,10 @@ public class CommonServiceImpl implements CommonService {
         return restUntil1;
     }
 
+    /**
+     * 获取报警信息
+     * @return
+     */
     @Override
     public RestUntil getWarnings() {
         RestUntil restUntil = new RestUntil();
@@ -910,6 +941,10 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 从数据库获取经纬度校正代码信息
+     * @return
+     */
     @Override
     public Map selectDm() {
         RestUntil restUntil = new RestUntil();
@@ -975,6 +1010,10 @@ public class CommonServiceImpl implements CommonService {
 
     }*/
 
+    /**
+     * 各区域人员位置信息统计（主要使用）
+     * @return
+     */
    @Override
           public RestUntil selRegionPersonPoint() {
               /*RestUntil restUntil = new RestUntil();
@@ -1319,6 +1358,10 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 查询进出入人员信息（主要用于隧道、矿井及部分二道门区域）
+     * @return
+     */
     @Override
     public RestUntil selInOrOutInfo() {
         RestUntil restUntil = new RestUntil();
@@ -1343,6 +1386,11 @@ public class CommonServiceImpl implements CommonService {
 
     }
 
+    /**
+     * 根据卡号查询人员信息
+     * @param cardId
+     * @return
+     */
     @Override
     public RestUntil selPersonInfoByCard(Integer cardId) {
         RestUntil restUntil = new RestUntil();
@@ -1374,6 +1422,10 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 获取定位卡电量信息
+     * @return
+     */
     @Override
     public RestUntil getBattery() {
         RestUntil restUntil = new RestUntil();
@@ -1397,6 +1449,10 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 获取基站位置信息
+     * @return
+     */
     @Override
     public RestUntil getStationPos() {
         RestUntil restUntil = new RestUntil();
@@ -1429,6 +1485,12 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 人员和人员卡绑定
+     * @param ryId
+     * @param cardSn
+     * @return
+     */
     @Override
     public RestUntil insertRyk(Integer ryId, Integer cardSn) {
         RestUntil restUntil = new RestUntil();
@@ -1450,6 +1512,9 @@ public class CommonServiceImpl implements CommonService {
         }
         return restUntil;
     }
+    /**
+     * 修改人员绑卡信息
+     */
     @Override
     public RestUntil updateRyk(Integer ryId, Integer cardSn) {
         RestUntil restUntil = new RestUntil();
@@ -1472,6 +1537,11 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 删除人员卡信息
+     * @param ryId
+     * @return
+     */
     @Override
     public RestUntil deleteRyk(Integer ryId) {
         RestUntil restUntil = new RestUntil();
@@ -1494,6 +1564,11 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 增加网关基站
+     * @param gateJzxx
+     * @return
+     */
     @Override
     public RestUntil inserGateWay(GateJzxx gateJzxx) {
         RestUntil restUntil = new RestUntil();
@@ -1516,6 +1591,11 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 修改网关基站信息
+     * @param gateJzxx
+     * @return
+     */
     @Override
     public RestUntil updateGateWay(GateJzxx gateJzxx) {
         RestUntil restUntil = new RestUntil();
@@ -1540,6 +1620,11 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 删除网关基站
+     * @param id
+     * @return
+     */
     @Override
     public RestUntil delGateWay(Integer id) {
         RestUntil restUntil = new RestUntil();
@@ -1562,6 +1647,12 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 查询网关基站
+     * @param type
+     * @param station_id
+     * @return
+     */
     @Override
     public RestUntil selGateWay(Integer type,Integer station_id) {
         RestUntil restUntil = new RestUntil();
@@ -1600,6 +1691,11 @@ public class CommonServiceImpl implements CommonService {
             return restUntil;
     }
 
+    /**
+     * 根据卡号查找相关人员卡信息
+     * @param cardSn
+     * @return
+     */
     @Override
     public RestUntil selRykInfoByCSn(Integer cardSn) {
         RestUntil restUntil = new RestUntil();
@@ -1622,6 +1718,11 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 新增人员基本信息
+     * @param ryJbxx
+     * @return
+     */
     @Override
     public RestUntil inserRyJbxx(RyJbxx ryJbxx) {
         RestUntil restUntil = new RestUntil();
@@ -1644,6 +1745,11 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 修改人员基本信息
+     * @param ryJbxx
+     * @return
+     */
     @Override
     public RestUntil updateRy(RyJbxx ryJbxx) {
         RestUntil restUntil = new RestUntil();
@@ -1668,6 +1774,11 @@ public class CommonServiceImpl implements CommonService {
         return restUntil;
     }
 
+    /**
+     * 删除人员信息
+     * @param id
+     * @return
+     */
     @Override
     public RestUntil delRyJbxx(Integer id) {
         RestUntil restUntil = new RestUntil();

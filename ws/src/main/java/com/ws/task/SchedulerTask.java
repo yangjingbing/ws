@@ -25,6 +25,7 @@ import java.util.*;
 
 /**
  * @author isHello
+ * 计划任务事件类
  */
 @Component
 public class SchedulerTask {

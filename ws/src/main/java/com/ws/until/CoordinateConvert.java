@@ -1,8 +1,7 @@
 package com.ws.until;
 
 /**
- * Created by CaiHB on 2015/11/2 15:31.
- * E-mail:caihaobing@sina.cn
+ * 地图转换工具类
  */
 public class CoordinateConvert {
 

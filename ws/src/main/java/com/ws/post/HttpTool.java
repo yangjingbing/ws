@@ -18,6 +18,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import java.io.*;
 import java.util.*;
 
+/**|
+ * Http接口工具类
+ */
 public class HttpTool {
     public static JSONObject post(String url, JSONObject json, Map<String, String> headers) {
         HttpClient client = new DefaultHttpClient();

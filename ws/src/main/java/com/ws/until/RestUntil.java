@@ -2,6 +2,9 @@ package com.ws.until;
 
 import lombok.Data;
 
+/**
+ * 通用的接口输出信息
+ */
 @Data
 public class RestUntil {
 

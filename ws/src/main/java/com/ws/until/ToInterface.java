@@ -6,8 +6,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * @author yjb
- * @date 2022/5/6 10:00
+ * 接口工具类
  */
 public class ToInterface {
     /**

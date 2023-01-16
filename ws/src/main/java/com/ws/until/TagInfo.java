@@ -2,6 +2,9 @@ package com.ws.until;
 
 import lombok.Data;
 
+/**
+ * 国瑞接口要求输出对象类
+ */
 @Data
 public class TagInfo {
     private String head;
